@@ -1,0 +1,24 @@
+{
+  "name": "table-gen-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Telegram-бот учёта задач: разбор русского текста, SQLite, утренняя сводка в 9:00, погодные предупреждения Open-Meteo",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "parse": "node src/cli.js parse",
+    "summary": "node src/cli.js summary",
+    "weather": "node src/cli.js weather",
+    "digest": "node src/cli.js digest",
+    "list": "node src/cli.js list",
+    "test": "node --test --experimental-test-isolation=none \"test/*.test.js\"",
+    "test:net": "node scripts/test-net.mjs",
+    "export": "node src/cli.js export"
+  },
+  "dependencies": {},
+  "optionalDependencies": {}
+}
